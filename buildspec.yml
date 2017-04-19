@@ -7,14 +7,14 @@ environment_variables:
 phases:
   install:
     commands:
-      - apt-get update -y
+      - sudo apt-get update -y
   pre_build:
     commands:
-      - npm install
+      - sudo npm install
   build:
     commands:
       - echo Build started on `date`
-      - npm start build
+      - sudo npm start build
   post_build:
     commands:
       - echo Build completed on `date`
